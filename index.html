@@ -1,119 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Resume</title>
 </head>
+
 <body>
     <!-- Зовнішня обгортка -->
-    <div>
+    <div class="wrapper">
         <!-- Секція з головною інформацією -->
-        <section>
-            <div>
-                <h2>Front-End Developer</h2>
-                <h1>Polina Kasianova</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+        <main class="main">
+            <div class="main__about">
+                <h2 class="main__about-profession">Front-End Developer</h2>
+                <h1 class="main__about-name">Polina Kasianova</h1>
+                <p class="main__about-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore
                     et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas
                     accumsan lacus vel facilisis.</p>
             </div>
             <!-- Блок "Проєкти" -->
-            <div>
-                <h3>Projects</h3>
-                <ol>
-                    <li>
-                        <a href="https://github.com/kasyaaaak">https://github.com/kasyaaaak</a>
-                        ........................ [ HTML5, CSS3 ]
+            <div class="main__projects">
+                <h3 class="main__projects-title title">Projects</h3>
+                <ol class="main__projects-list">
+                    <li class="main__projects-item">
+                        <a class="main__projects-link"
+                            href="https://github.com/kasyaaaak">https://github.com/kasyaaaak</a>
+                        <span class="main__projects-dec">........................ [ HTML5, CSS3 ]</span>
                     </li>
-                    <li>
-                        <a href="https://github.com/kasyaaaak">https://github.com/kasyaaaak</a>
-                        .................[ JavaScript ]
+                    <li class="main__projects-item">
+                        <a class="main__projects-link"
+                            href="https://github.com/kasyaaaak">https://github.com/kasyaaaak</a>
+                        <span class="main__projects-dec">.........................[ JavaScript ]</span>
                     </li>
-                    <li>
-                        <a href="https://github.com/kasyaaaak">https://github.com/kasyaaaak</a>
-                        .................... [ React.js, Node.js ]
+                    <li class="main__projects-item">
+                        <a class="main__projects-link"
+                            href="https://github.com/kasyaaaak">https://github.com/kasyaaaak</a>
+                        <span class="main__projects-dec">........................ [ React.js, Node.js ]</span>
                     </li>
                 </ol>
             </div>
             <!-- Блок "Досвід роботи" -->
-            <div>
-                <h3>Work Experience</h3>
+            <div class="main__experience">
+                <h3 class="main__experience-title title">Work Experience</h3>
                 <!-- Блок "Компанія №1" -->
-                <div>
-                    <h4>Front-End Developer Freelance </h4>
-                    <p>September 2019 - up to now | Country</p>
-                    <ul>
-                        <li> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                <div class="main__experience-place">
+                    <h4 class="main__experience-position">Front-End Developer <span>Freelance</span></h4>
+                    <p class="main__experience-period">September 2019 - up to now | Country</p>
+                    <ul class="main__experience-list">
+                        <li class="main__experience-item"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                            do eiusmod tempor incididunt
                             ut labore et dolore magna aliqua. </li>
-                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-                        <li>Risus commodo viverra maecenas. </li>
-                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</li>
+                        <li class="main__experience-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                        <li class="main__experience-item">Risus commodo viverra maecenas. </li>
+                        <li class="main__experience-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                            do eiusmod.</li>
                     </ul>
                 </div>
                 <!-- Блок "Компанія №2" -->
-                <div>
-                    <h4>Manager Banderogusak & Co.</h4>
-                    <p>March 2015 - October 2020 | Country</p>
-                    <ul>
-                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod labore et dolore
+                <div class="main__experience-place">
+                    <h4 class="main__experience-position">Manager <span>Banderogusak & Co.</span></h4>
+                    <p class="main__experience-period">March 2015 - October 2020 | Country</p>
+                    <ul class="main__experience-list">
+                        <li class="main__experience-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                            do eiusmod labore et dolore
                             magna aliqua. </li>
-                        <li>Quis ipsum suspendisse ultrices gravida.</li>
-                        <li>Risus commodo viverra maecenas. </li>
+                        <li class="main__experience-item">Quis ipsum suspendisse ultrices gravida.</li>
+                        <li class="main__experience-item">Risus commodo viverra maecenas. </li>
                     </ul>
                 </div>
                 <!-- Блок "Компанія №3" -->
-                <div>
-                    <h4>Manager BestUA Corp.</h4>
-                    <p>March 2013 - October 2015 | Country</p>
-                    <ul>
-                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </li>
-                        <li>Quis ipsum suspendisse ultrices gravida..</li>
-                        <li>Risus commodo viverra maecenas. </li>
+                <div class="main__experience-place">
+                    <h4 class="main__experience-position">Manager <span>BestUA Corp.</span></h4>
+                    <p class="main__experience-period">March 2013 - October 2015 | Country</p>
+                    <ul class="main__experience-list">
+                        <li class="main__experience-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </li>
+                        <li class="main__experience-item">Quis ipsum suspendisse ultrices gravida..</li>
+                        <li class="main__experience-item">Risus commodo viverra maecenas. </li>
                     </ul>
                 </div>
             </div>
             <!-- Блок "Освіта" -->
-            <div>
-                <h3>Education</h3>
-                <h4>International Europan University</h4>
-                <p>Software Engineer</p>
-                <p>September 2021 - now | Ukraine</p>
+            <div class="main__education">
+                <h3 class="main__education-title title">Education</h3>
+                <h4 class="main__education-place">International Europan University</h4>
+                <p class="main__education-speciality">Software Engineer</p>
+                <p class="main__education-period">September 2021 - now | Ukraine</p>
             </div>
-        </section>
+            </section>
+        </main>
         <!-- Бокова секція -->
-        <aside>
-            <img src="./img/user-logo.jpg" alt="Фото профілю" width="300px">
+        <aside class="sidebar">
+            <img class="user-img" src="./img/user-logo.jpg" alt="Фото профілю" width="300px">
             <!-- Блок "Контакти" -->
-            <div>
-                <h3>Contacts</h3>
-                <p>C: <a href="tel:+380630580599">+38 063 058 05 99</a></p>
-                <p>E: <a href="mailto:polinakasiyanova@ieu.edu.ua">polinakasiyanova@ieu.edu.ua</a></p>
+            <div class="sidebar__contacts">
+                <h3 class="sidebar__contacts-title title">Contacts</h3>
+                <p class="sidebar__contacts-item">
+                    <span>C: </span>
+                    <a class="sidebar__contacts-number"
+                        href="tel:+380630580599">+38
+                        063 058 05 99</a>
+                    </p>
+                <p class="sidebar__contacts-item">
+                    <span>E: </span>
+                    <a class="sidebar__contacts-number"
+                        href="mailto:polinakasiyanova@ieu.edu.ua">polinakasiyanova@ieu.edu.ua</a>
+                    </p>
             </div>
             <!-- Блок "Технічні навички" -->
-            <div>
-                <h3>Tech Skills</h3>
-                <ul>
-                    <li>HTML5</li>
-                    <li>CSS3</li>
-                    <li>GIT</li>
-                    <li>JavaScript</li>
-                    <li>Figma</li>
-                    <li>Adobe Photoshop</li>
-                    <li>Adobe InDesign</li>
+            <div class="sidebar__techskills">
+                <h3 class="sidebar__techskills-title title">Tech Skills</h3>
+                <ul class="sidebar__techskills-list">
+                    <li class="sidebar__techskills-item"><span>CSS3</span></li>
+                    <li class="sidebar__techskills-item"><span>HTML5</span></li>
+                    <li class="sidebar__techskills-item"><span>GIT</span></li>
+                    <li class="sidebar__techskills-item"><span>JavaScript</span></li>
+                    <li class="sidebar__techskills-item"><span>Figma</span></li>
+                    <li class="sidebar__techskills-item"><span>Adobe Photoshop</span></li>
+                    <li class="sidebar__techskills-item"><span>Adobe InDesign</span></li>
                 </ul>
             </div>
             <!-- Блок "Соціальні навички" -->
-            <div>
-                <h3>Soft Skills</h3>
-                <ul>
-                    <li>Scrum</li>
-                    <li>Agile</li>
-                    <li>Teamwork</li>
+            <div class="sidebar__softskills">
+                <h3 class="sidebar__softskills-title title">Soft Skills</h3>
+                <ul class="sidebar__softskills-list">
+                    <li class="sidebar__softskills-item"><span>Scrum</span></li>
+                    <li class="sidebar__softskills-item"><span>Agile</span></li>
+                    <li class="sidebar__softskills-item"><span>Teamwork</span></li>
                 </ul>
             </div>
         </aside>
-    </div>
+
 </body>
 
 </html>
